@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+ 
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:auto;
+    padding:2rem;
+
+}
+ul{
+    display:flex;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    right: 280px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+    /* float:inline-start; */
+
+
+}
+
+.b{
+    float: right;
+}
+
+button{
+background: transparent;
+ 
+    padding: 10px 25px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.btn{
+   text-decoration: none;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    align-items: center;
+    
+
+   
+}
+.menu{
+    display: none;
+}
+.image img{
+width:400px;
+height: auto;
+/* margin-top: -100px; */
+/* object-fit: cover; */
+    
+}
+.text h1{
+    font-weight: 700;
+    font-size:4.5rem;
+    margin-bottom:50px;
+    /* top: 100px; */
+}
+.text p{
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.text button{
+   background: #000;
+   color: #fff;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   margin-bottom: 50px;
+   margin-top:  30px;
+   transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+.text button:hover{
+    background: transparent;
+    color: #000;
+   
+}
+.text .img{
+    display: flex;
+    gap: 2rem;
+    /* margin: bottom 40px; */
+
+}
+.text .img img{
+    width: 45px;
+  
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /*padding: 5px;
+    */list-style-type: none;
+    width: 110px;
+    /*Removedefaultliststyles*/margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+  /* Style for each item in the horizontal dropdown */
+  .dropdown a {
+    display: flex; /* Use flexbox to align image and text side by side */
+    align-items: center; /* Align items vertically in the center */
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* Show the dropdown when the parent li is hovered */
+  li:hover .dropdown {
+    display: flex;
+  }
+  .arrow-down {
+   
+    margin-right: 10px; /* Adjust the margin for spacing between image and text */
+    display: inline-block; /* Align with text */
+    transition: transform 0.3s; /* Add a transition for a smooth effect */
+  }
+.dropdown img{
+ 
+    margin-right: 5px; /* Adjust the margin for spacing between image and text */
+  
+}
+.icon{
+    display: none;
+}
+.text.two{
+    display: none;
+}
+.btn{
+    
+    color: #000;
+ 
+
+}
+@media (max-width:1256px) {
+    .container{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       gap: 0;
+       padding:0 5rem;
+    }
+
+}
+@media (max-width:950px) {
+    .container {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* Set the maximum width as needed */
+        width: 100%;
+        padding: 20px;
+        gap: 0;
+      }
+    .image img.desktop-image {
+        display: none;
+      }
+  
+      .image img.mobile-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .text.one{
+display: none;
+      }
+      .text.two{
+        padding-top: 50px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+      }
+      .text.two h1{
+        line-break: normal;
+        margin: bottom 0;
+      
+      }
+
+.img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+}
+.text .img img{
+    width: 120px;
+  
+}
+header{
+    width: 100%;
+
+}
+.menu{
+    display:block;
+}
+nav ul {
+    display: none;
+  }
+  ul{
+    position: absolute;
+    top: 5rem;
+    width: 20rem;
+    height: 100vh;
+    background: #fff;
+    right: -100%;
+    flex-direction: column;
+    gap: 0;
+    box-shadow:0 2rem 5rem rgba(0, 0, 0, 0.3);
+    transition: var(--transiition);
+    -webkit-transition: var(--transiition);
+    -moz-transition: var(--transiition);
+    -ms-transition: var(--transiition);
+    -o-transition: var(--transiition);
+  }
+  nav li{
+   
+    width: 100%;
+
+}
+ul{
+    right: 0;
+}
+nav li {
+   display: inline-block;
+   text-align: center;
+   padding: 2rem 0;
+    width: 100%;
+    color: var(--color-white) !important;
+
+}
+.dropdown{
+    left: 100px;
+}
+.b{
+    display: block;
+
+}
+
+}
+@media (max-width:500px) {
+    .container {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 800px; /* Set the maximum width as needed */
+        width: 100%;
+        padding: 20px;
+        gap: 0;
+      }
+      .img{
+        width:200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+    
+    }
+    .text.two h1{
+        line-break: normal;
+        margin: bottom 0;
+        font-size: 2.5rem;
+      
+      }
+    /* .image img.mobile-image {
+       
+        width: 300px;
+     
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+      } */
+}
